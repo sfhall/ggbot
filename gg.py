@@ -1,6 +1,6 @@
 import markovify
 
-with open("nicemessages.txt", encoding="utf-8") as messages:
+with open("nicemessages.txt") as messages:
     text = messages.read()
 
 sentence = markovify.NewlineText(text, state_size=1)
